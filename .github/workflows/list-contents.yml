@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: List selected subdirectory contents
-      - run: |
+        run: |
           echo "Files in $SUBDIRECTORY:"
           ls
         env:
