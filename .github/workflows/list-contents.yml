@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: |
           echo "Files in $SUBDIRECTORY:"
-          echo pwd
+          pwd
         env:
           SUBDIRECTORY: ${{ inputs.subdirectory }}
          
