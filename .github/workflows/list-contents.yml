@@ -15,6 +15,9 @@ jobs:
   list-contents:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: List selected subdirectory contents
       - run: |
           echo "Files in $SUBDIRECTORY:"
           ls
