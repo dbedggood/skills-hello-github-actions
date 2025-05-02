@@ -20,7 +20,7 @@ jobs:
       - name: List selected subdirectory contents
         run: |
           echo "Files in $SUBDIRECTORY:"
-          ls
+          ls .github/$SUBDIRECTORY
         env:
           SUBDIRECTORY: ${{ inputs.subdirectory }}
          
