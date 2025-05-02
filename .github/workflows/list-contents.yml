@@ -1,0 +1,23 @@
+name: List .github subdirectory contents
+on: 
+  workflow_dispatch:
+    inputs:
+      subdirectory:
+        description: 'Subdirectory to list contents of'
+        required: true
+        default: 'steps'
+        type: choice
+        options:
+        - steps
+        - workflows
+
+jobs:
+  list-contents:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Files in $SUBDIRECTORY:"
+          echo pwd
+        env:
+          SUBDIRECTORY: ${{ inputs.subdirectory }}
+         
