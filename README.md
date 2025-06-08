@@ -2,6 +2,6 @@
 
 # GitHub Actions Playground
 
-_Everything to see here._
+_Some things to see here._
 
 </header>
