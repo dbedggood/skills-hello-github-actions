@@ -1,0 +1,8 @@
+on: push
+
+jobs:
+  log:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "logging SOMETHING"
